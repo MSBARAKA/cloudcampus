@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header><h1>glossaire</h1>
+    <header><h1>contactez-nous</h1>
     <nav>
         <a href="accueil.html">Accueil</a>
         <a href="quisommesnous.html">Qui sommes-nous ?</a>
@@ -17,5 +17,61 @@
     </nav>
 
     </header>
+
+
+    <form action="" method="post">
+       <fieldset>
+        <h2>Selectionnez votre coffret blob</h2>
+        <div>
+        <label for="coffret">Coffret</label>
+        <select name="coffretblob" id="coffretblob">
+         <option value="coffretscolaire">Coffret scolaire</option>
+         <option value="coffretenfant">Coffret enfant</option>
+         <option value="coffret entreprise">Coffret entreprise</option>
+         <option value="coffret particulier">Coffret particulier</option>
+        </select>
+        </div> 
+        <div>
+        <label for="qui">Vous êtes...</label>
+        <select name="identite" id="identite">
+         <option value="identiteenfant">un enfant</option>
+         <option value="identiteentreprise">une entreprise</option>
+         <option value="identite">un particulier</option>
+        </select>
+        </div> 
+
+        <h2>Votre identité</h2>
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="livraison">adresse de livraison</label>
+            <input type="text" name="livraison" id="livraison">
+        </div>
+     
+        <div>
+            <label for="autorisation">Si tu es un enfant, un accord de tes parents est nécessaire avant l'envoi de ton blob, mets leur numéro ici, ils devront nous contacter et signer un autorisation en ligne électronique. (Pour les majeurs, laissez la case vide)</label>
+            <input type="text" name="autorisation" id="autorisation">
+        </div>
+        <div>
+            <label for="rgpd">RGPD êtes-vous d'accord pour qu'on stocke vos données dans notre base de données ?</label>
+            <select name="rgpdaccord" id="rgpdaccord">
+             <option value="rgpdoui">oui</option>
+             <option value="rgpd">non</option>
+             </select>
+            </div> 
+            <input  type ="submit" value="enregistrer">
+        </fieldset>
+        <input type="reset">
+        <button type="reset">Effacer</button>
+    </form>
+
+    <div>Une fois le formulaire envoyé, on vous enverra le devis avec les prix définitifs</div>
 </body>
 </html>
