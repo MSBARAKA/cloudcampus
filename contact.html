@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-main{
-
-    width: 90%;
-    margin: auto;
-    border: 3px solid red;
-}
-
-input{ background-color: black; width: 100%; margin-bottom: 16px;}
-legend{color: white; background-color: black;border: 1px solid black;}
-
-   </style>
-   
+  <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Nunito&display=swap" rel="stylesheet">
     <title>contact</title>
 </head>
 <body>
 
-    <header><h1>contactez-nous</h1>
+    <header>
     <nav>
+         <img  href="accueil.html" id="blob"src="assets/css/blob.png" alt="blob logo">
         <a href="accueil.html">Accueil</a>
         <a href="quisommesnous.html">Qui sommes-nous ?</a>
         <a href="contact.html">Nous contacter</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="seconnecter.html">Se connecter</a>
         <a href="glossaire.html">Notre glossaire</a>
     </nav>
-
+                     <h1>Contactez-nous</h1>
     </header>
-<!-- 
+
 
     <form action="" method="post">
-       <fieldset> 
-        <h2>Selectionnez votre coffret blob</h2>
+        <main>
+        <fieldset> 
+        <h2>Sélectionnez votre coffret blob</h2>
         <div>
-        <label for="coffret">Coffret</label>
+        <label for="coffret"> Coffret = 5 blobs </label>
         <select name="coffretblob" id="coffretblob">
          <option value="coffretscolaire">Coffret scolaire</option>
          <option value="coffretenfant">Coffret enfant</option>
@@ -44,16 +41,41 @@ legend{color: white; background-color: black;border: 1px solid black;}
          <option value="coffret particulier">Coffret particulier</option>
         </select>
         </div> 
+
         <div>
-        <label for="qui">Vous êtes...</label>
-        <select name="identite" id="identite">
-         <option value="identiteenfant">un enfant</option>
-         <option value="identiteentreprise">une entreprise</option>
-         <option value="identite">un particulier</option>
+            <label for="nombre"> nombre total de coffret (maximum 10 coffrets par livraison)</label>
+            <select name="nombre" id="nombre">
+             <option value="nombre">1</option>
+             <option value="nombre">2</option>
+             <option value="nombre">3</option>
+             <option value="nombre">4</option>
+             <option value="nombre">5</option>
+             <option value="nombre">6</option>
+             <option value="nombre">7</option>
+             <option value="nombre">8</option>
+             <option value="nombre">9</option>
+             <option value="nombre">10</option>
+             
+            </select>
+            </div> 
+       
+        <label for="blob">Choississez votre blob</label>
+        <select name="blob" id="blob">
+         <option value="blobavaustralien">Blob australien / AVA</option>
+         <option value="blolbcharlyaméricain">Blob américain / Charly</option>
+         <option value="blobmystere">Blob mystère / nouvelle espèce</option>
         </select>
         </div> 
 
         <h2>Votre identité</h2>
+        <div>
+            <label for="qui">Vous êtes...</label>
+            <select name="identite" id="identite">
+             <option value="identiteenfant">un enfant</option>
+             <option value="identiteentreprise">une entreprise</option>
+             <option value="identite">un particulier</option>
+            </select>
+       </div> 
         <div>
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom">
@@ -79,46 +101,21 @@ legend{color: white; background-color: black;border: 1px solid black;}
              <option value="rgpd">non</option>
              </select>
             </div> 
-            <input  type ="submit" value="enregistrer">
+
+            <div>
+                <label for="comment">Votre commentaire</label>
+                <textarea name="comment" id="comment" cols="6" rows="3"></textarea>
+                </div> 
+
+           
+            <input  type ="submit" value="enregistrer" id="enregistrer">
        </fieldset>
-     <input type="reset">
-        <button type="reset">Effacer</button> 
-    </form> -->
-
-    <div>Une fois le formulaire envoyé, on vous enverra le devis avec les prix définitifs</div>
-
-<form action="" method="post">
-<main>
-<fieldset>
-    <legend>ma liste</legend>
-    <div>
-        <label for="">Nom</label>
-        <input type="text">
-    </div>
-        
-    <div>
-        <label for="">Prénom</label><input type="text">
-    </div>
-    <div>
-        <label for="">Email</label><input type="email">
-    </div>
-    <div>
-        <label for="">adresse</label><input type="text">
-    </div>
-    <div>
-        <label for="">couleur</label><input type="text">
-    </div>
-
-    <div>
-
-<label for="">choix1</label><input type="radio">
-<label for="">choix2</label><input type="radio">
-<label for="">choix3</label><input type="radio">
-
-    </div>
-</fieldset>
-
-</form>
+ 
+    </form>
 </main>
+    <div>Une fois le formulaire envoyé, on vous enverra le devis avec les prix définitifs
+        1 coffret = 1 euros
+    </div>
+
 </body>
 </html>
